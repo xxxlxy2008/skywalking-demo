@@ -1,0 +1,8 @@
+server:
+  port: 8000
+
+dubbo:
+  application:
+    name: demo-webapp # Dubbo Consumer名字
+  registry:
+    address: zookeeper://127.0.0.1:2181 # 注册中心地址

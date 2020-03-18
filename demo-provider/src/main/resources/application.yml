@@ -1,0 +1,12 @@
+dubbo:
+  application:
+    name: demo-provider # 服务名
+  registry:
+    address: zookeeper://127.0.0.1:2181 # 注册中心地址
+  protocol:
+    name: dubbo # 指定通信协议
+    port: 20880 # 通信端口  这里指的是与消费者间的通信协议与端口
+  provider:
+    timeout: 10000 # 配置全局调用服务超时时间，dubbo默认是1s，肯定不够用呀
+    retries: 0 # 不进行重试
+    delay: -1

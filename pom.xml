@@ -11,6 +11,8 @@
         <module>TestAgent</module>
         <module>TestMain</module>
         <module>demo-byte-buddy</module>
+        <module>demo-log</module>
+        <module>demo-es</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

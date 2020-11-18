@@ -18,6 +18,11 @@
             <groupId>com.xxx</groupId>
             <artifactId>demo-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.apache.skywalking</groupId>
+            <artifactId>apm-toolkit-logback-1.x</artifactId>
+            <version>6.2.0</version>
+        </dependency>
         <!-- 引入spring-boot-starter以及dubbo和curator的依赖 -->
         <dependency>
             <groupId>com.alibaba.boot</groupId>

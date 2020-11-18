@@ -1,0 +1,22 @@
+type Query {
+    # getById()类似于Java方法，根据Id查询书籍信息
+    # id是方法参数，Int(I大写)表示是一个int类型，"!"表示非空
+    # Book是返回值类型，这里返回的是一个Book对象
+    getById(id: ID!): Book
+
+    # 查询Book列表
+    list: [Book]
+}
+
+type Book {
+    id: ID # 编号
+    name: String #书名
+    pageCount: Int #页数
+    author: Author # 作者
+}
+
+type Author {
+  id: ID # 作者编号
+  firstName: String # 作者姓名
+  lastName: String
+}

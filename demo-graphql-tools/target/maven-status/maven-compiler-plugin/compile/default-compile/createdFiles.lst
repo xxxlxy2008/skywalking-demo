@@ -1,0 +1,9 @@
+com/xxx/BookResolver.class
+com/xxx/AuthorService.class
+com/xxx/AuthorServiceImpl.class
+com/xxx/ApplicationStartUp.class
+com/xxx/BookServiceImpl.class
+com/xxx/BookInput.class
+com/xxx/BookService.class
+com/xxx/Author.class
+com/xxx/Book.class

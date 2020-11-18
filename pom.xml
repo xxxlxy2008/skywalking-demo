@@ -13,6 +13,10 @@
         <module>demo-byte-buddy</module>
         <module>demo-log</module>
         <module>demo-es</module>
+        <module>demo-graphql</module>
+        <module>demo-graphql-tools</module>
+        <module>demo-antlr4</module>
+        <module>demo-freemarker</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

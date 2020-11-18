@@ -1,0 +1,33 @@
+type Query {
+    getBookById(id: ID!): Book
+    list: [Book]
+}
+
+extend type Query{ # 扩展 Query
+    getAuthorById(id: ID!): Author # 根据 id查询作者信息
+}
+
+type Mutation {
+    createBook(input : BookInput!) : Book!
+    createAuthor(firstName:String!, lastName:String!) : ID!
+}
+
+input BookInput { # input 表示入参
+    name : String!
+    pageCount : String!
+    authorId: String!
+}
+
+
+type Book {
+    id: ID # 编号
+    name: String #书名
+    pageCount: Int #页数
+    author: Author # 作者
+}
+
+type Author {
+  id: ID # 作者编号
+  firstName: String # 作者姓名
+  lastName: String
+}
